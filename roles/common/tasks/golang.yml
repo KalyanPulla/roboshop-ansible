@@ -12,7 +12,7 @@
   ansible.builtin.include_tasks: mysql-schema.yml
 
 - name: Compile Application Code
-  ansible.builtin.shell: go mod tidy && CGO_ENABLED=0 go build -o /app/catalogue .
+  ansible.builtin.shell: go mod tidy && CGO_ENABLED=0 go build -o /app/{{ component_name }} .
   args:
     chdir: /app
 
