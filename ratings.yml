@@ -1,0 +1,5 @@
+- name: Setup Ratings Component
+  hosts: all
+  become: yes
+  ansible.builtin.roles:
+    - ratings
