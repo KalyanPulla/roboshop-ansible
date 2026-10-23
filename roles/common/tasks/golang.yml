@@ -11,11 +11,6 @@
 - name: Install Mysql and load Schema
   ansible.builtin.include_tasks: mysql-schema.yml
 
-- name: Load Master Data
-  ansible.builtin.shell: mysql -h mysql-dev.kaldevops14.online -u root -pRoboShop@1 catalogue < db/master-data.sql
-  args:
-    chdir: /app
-
 - name: Compile Application Code
   ansible.builtin.shell: go mod tidy && CGO_ENABLED=0 go build -o /app/catalogue .
   args:

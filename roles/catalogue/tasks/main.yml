@@ -2,3 +2,13 @@
   ansible.builtin.include_role:
     name: common
     tasks_from: golang
+
+- name: Import Golang from common role
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: mysql-schema
+
+- name: Load Master Data
+  ansible.builtin.shell: mysql -h mysql-dev.kaldevops14.online -u root -pRoboShop@1 catalogue < db/master-data.sql
+  args:
+    chdir: /app
