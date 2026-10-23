@@ -1,1 +1,1 @@
-ansible-playbook -i $1-dev.kaldevops14.online, $1.yml -e ansible_user=devops -e ansible_password=devops@12345
+ansible-playbook -i $1-dev.kaldevops14.online, roboshop.yml -e component_name=$1 -e ansible_user=devops -e ansible_password=devops@12345
