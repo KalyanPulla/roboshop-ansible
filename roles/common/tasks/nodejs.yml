@@ -15,4 +15,4 @@
     chdir: /app
 
 - name: Load SystemD
-  ansible.builtin.include_tasks: systemd.yaml
+  ansible.builtin.include_tasks: systemd.yml
