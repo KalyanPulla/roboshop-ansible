@@ -1,6 +1,6 @@
 - name: Setup Frontend Component
   hosts: all
   become: yes
-  ansible.builtin.roles:
+  roles
     - frontend
 

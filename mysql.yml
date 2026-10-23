@@ -1,5 +1,5 @@
 - name: Setup MySQL Component
   hosts: all
   become: yes
-  ansible.builtin.roles:
+  roles
     - mysql

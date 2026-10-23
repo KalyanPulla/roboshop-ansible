@@ -1,5 +1,5 @@
 - name: Setup Shipping Component
   hosts: all
   become: yes
-  ansible.buitlin.roles:
+  roles:
     - shipping

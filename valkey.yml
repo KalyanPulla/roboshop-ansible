@@ -1,5 +1,5 @@
 - name: Setup Valkey Component
   hosts: all
   become: yes
-  ansible.builtin.roles:
+  roles
     - valkey

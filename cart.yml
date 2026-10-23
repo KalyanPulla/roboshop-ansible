@@ -1,5 +1,5 @@
 - name: Setup Cart Component
   hosts: all
   become: yes
-  anisble.builtin.roles:
+  roles:
     - cart
