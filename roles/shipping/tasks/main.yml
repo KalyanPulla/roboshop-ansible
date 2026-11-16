@@ -2,8 +2,3 @@
   ansible.builtin.include_role:
     name: common
     tasks_from: java
-
-- name: Import Mysql code from common role
-  ansible.builtin.include_role:
-    name: common
-    tasks_from: mysql-schema
